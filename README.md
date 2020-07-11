@@ -1,2 +1,3 @@
-# quantum-machine-learning
-Quantum Computing in Deep Learning and Machine Learning
+# quantum-computing
+Quantum Computing (QC) and Quantum Machine Learning (QML)
+
