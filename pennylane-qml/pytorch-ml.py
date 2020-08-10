@@ -1,6 +1,6 @@
 import torch
 from torch.autograd import Variable
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 tensor_data = torch.tensor([(0, 0), (0.1, 0.1), (0.2, 0.2)])	# (data, label)
 
@@ -8,7 +8,7 @@ def function(phi, input_data = None):
 	return phi*input_data	# Some Linear model/function.
 
 def loss_function(output, label):
-	return torch.abs(a-b)**2	# Mean Square loss
+	return torch.abs(output-label)**2	# Squared loss
 
 def gradient(phi):		# Minimize the average loss i.e. Gradient Descent
 	c = 0
